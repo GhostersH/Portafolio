@@ -6,36 +6,162 @@ import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
-    icon: Tailwind,
-  },
-}
+    WORDPRESS: {
+        name: "WordPress",
+        class: "bg-blue-900 text-white",
+        icon: Link, // Puedes reemplazar esto con un ícono específico si lo tienes
+    },
+    ASTRO: {
+        name: "Astro.js",
+        class: "bg-indigo-800 text-white",
+        icon: Link,
+    },
+    REACT: {
+        name: "React",
+        class: "bg-blue-500 text-white",
+        icon: Link,
+    },
+    VITE: {
+        name: "Vite",
+        class: "bg-purple-600 text-white",
+        icon: Link,
+    },
+    TAILWIND: {
+        name: "TailwindCSS",
+        class: "bg-[#003159] text-white",
+        icon: Tailwind,
+    },
+    LARAVEL: {
+        name: "Laravel",
+        class: "bg-red-600 text-white",
+        icon: Link,
+    },
+    DJANGO: {
+        name: "Django",
+        class: "bg-green-800 text-white",
+        icon: Link,
+    },
+    PHP: {
+        name: "PHP",
+        class: "bg-violet-700 text-white",
+        icon: Link,
+    },
+    SALESFORCE: {
+        name: "Salesforce",
+        class: "bg-blue-400 text-white",
+        icon: Link,
+    },
+    POWERAUTOMATE: {
+        name: "PowerAutomate",
+        class: "bg-cyan-700 text-white",
+        icon: Link,
+    },
+    AWS: {
+        name: "AWS",
+        class: "bg-orange-600 text-white",
+        icon: Link,
+    },
+};
+
 const PROJECTS = [
-  {
-    title: "SVGL - A beautiful library with SVG logos",
-    description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-  {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
-    description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
-  },
-]
+    {
+        title: "Portal B2B",
+        description:
+            "Plataforma para agencias de viajes con itinerarios dinámicos, seguridad empresarial y automatización de procesos.",
+        link: "https://b2b.metropolitan-touring.com/",
+        image: "/projects/portalb2b.webp",
+        tags: [TAGS.REACT, TAGS.VITE, TAGS.TAILWIND, TAGS.LARAVEL, TAGS.SALESFORCE, TAGS.POWERAUTOMATE],
+    },
+    {
+        title: "MT Explorer (App web y móvil)",
+        description:
+            "App con check-in digital, itinerarios en tiempo real e integración con datos operativos.",
+        link: "https://alfa.explorer.ec/",
+        image: "/projects/explorer.webp",
+        tags: [TAGS.ASTRO, TAGS.DJANGO, TAGS.SALESFORCE, TAGS.POWERAUTOMATE, TAGS.TAILWIND],
+    },
+    {
+        title: "Travel Login Portal",
+        description:
+            "Portal monolítico con autenticación y acceso interno a itinerarios. Desplegado en AWS.",
+        link: "https://travel.metropolitan-touring.com/login",
+        image: "/projects/travel.webp",
+        tags: [TAGS.LARAVEL, TAGS.TAILWIND, TAGS.AWS],
+    },
+    {
+        title: "Big15 Cruises",
+        description:
+            "Plataforma interactiva para explorar fauna, actividades y destinos en Galápagos. Filtros avanzados y login empresarial con Azure AD.",
+        link: "https://big15.cruises.ec/",
+        image: "/projects/big15.png",
+        tags: [TAGS.PHP],
+    },
+    {
+        title: "Sistema de Links de Pago",
+        description:
+            "App segura para generación de enlaces de pago con autenticación empresarial y conexión con PayPal.",
+        link: "https://pay.metropolitan-touring.com/",
+        image: "/projects/paypal.png",
+        tags: [TAGS.PHP],
+    },
+    {
+        title: "Nurburgimp Imports",
+        description:
+            "Sitio institucional para importadora automotriz. Optimizado para SEO y conectado con herramientas de automatización.",
+        link: "https://nurburgimp.com/",
+        image: "/projects/nur.png",
+        tags: [TAGS.WORDPRESS],
+    },
+    {
+        title: "Sitio oficial Casa Gangotena",
+        description:
+            "Sitio web corporativo para uno de los hoteles más exclusivos de Quito. Optimizado para rendimiento, UX y SEO.",
+        link: "https://www.casagangotena.com/es/",
+        image: "/projects/gangotena.png",
+        tags: [TAGS.WORDPRESS],
+    },
+    {
+        title: "Mashpi Lodge Website",
+        description:
+            "Desarrollo del sitio de este lodge galardonado internacionalmente. Experiencia inmersiva con enfoque en diseño, accesibilidad y carga optimizada.",
+        link: "https://www.mashpilodge.com/",
+        image: "/projects/mashpi.png",
+        tags: [TAGS.WORDPRESS],
+    },
+    {
+        title: "La Pinta Galápagos Cruise",
+        description:
+            "Web informativa con itinerarios y recursos para visitantes del crucero La Pinta.",
+        link: "https://www.lapintagalapagoscruise.com/es/",
+        image: "/projects/pinta.png",
+        tags: [TAGS.WORDPRESS],
+    },
+    {
+        title: "Yate Isabela II",
+        description:
+            "Sitio multilingüe con enfoque en experiencia de usuario y posicionamiento orgánico para el mercado de lujo en Galápagos.",
+        link: "https://www.yachtisabela.com/es/",
+        image: "/projects/isa.png",
+        tags: [TAGS.WORDPRESS],
+    },
+    {
+        title: "Santa Cruz II Cruise",
+        description:
+            "Landing optimizada para el crucero Santa Cruz II con herramientas de conversión y analítica.",
+        link: "https://santacruzgalapagoscruise.com/",
+        image: "/projects/santa.png",
+        tags: [TAGS.WORDPRESS],
+    },
+    {
+        title: "Metrojourneys",
+        description:
+            "Sitio B2C de reservas para turismo de alta gama con integración CRM.",
+        link: "https://www.metrojourneys.com/es/",
+        image: "/projects/mj.png",
+        tags: [TAGS.WORDPRESS],
+    },
+];
+
 ---
 
 <div class="flex flex-col gap-y-16">
@@ -44,7 +170,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="Proyectos" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
